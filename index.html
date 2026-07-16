@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nyaya AI is an AI-powered Legal Assistant simplifying legal research, document summarization, contract analysis, and compliance for individuals, businesses, and legal professionals.">
+    <title>Nyaya AI | Justice Powered by Artificial Intelligence</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styling Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Gradient Background Mesh -->
+    <div class="bg-mesh">
+        <div class="mesh-orb orb-1"></div>
+        <div class="mesh-orb orb-2"></div>
+        <div class="mesh-orb orb-3"></div>
+    </div>
+    
+    <!-- Header / Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                </div>
+                <span>Nyaya<span class="gold-text">AI</span></span>
+            </a>
+            
+            <button class="mobile-toggle" aria-label="Toggle Navigation" id="mobile-toggle">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+            
+            <nav class="nav-links" id="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#features" class="nav-link">AI Features</a>
+                <a href="#resources" class="nav-link">Resources</a>
+                <a href="#case-studies" class="nav-link">Cases</a>
+                <a href="#team" class="nav-link">Team</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#features" class="cta-btn nav-cta">Try AI Assistant</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge animate-fade-in">
+                        <span class="badge-dot"></span>
+                        <span class="badge-text">Next-Gen Legal Technology</span>
+                    </div>
+                    <h1 class="hero-title animate-fade-in-up">
+                        Justice Powered by <br><span class="gradient-text">Artificial Intelligence</span>
+                    </h1>
+                    <p class="hero-subtitle animate-fade-in-up delay-1">
+                        Nyaya AI simplifies legal information, document analysis, and AI-assisted legal guidance through intelligent technology designed for individuals, businesses, startups, and legal professionals.
+                    </p>
+                    <div class="hero-ctas animate-fade-in-up delay-2">
+                        <a href="#features" class="btn btn-primary btn-glow">
+                            <span>Try AI Assistant</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#services" class="btn btn-secondary">
+                            <span>Explore Services</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual animate-fade-in delay-1">
+                    <div class="image-wrapper glass-card">
+                        <img src="assets/hero_ai_assistant.png" alt="Nyaya AI Assistant 3D Graphic" class="hero-image">
+                        <!-- Floating Holographic UI Overlays -->
+                        <div class="holo-badge badge-1 floating">
+                            <i class="fa-solid fa-shield-halved text-gold"></i>
+                            <span>SECURE VAULT</span>
+                        </div>
+                        <div class="holo-badge badge-2 floating-delayed">
+                            <i class="fa-solid fa-bolt text-teal"></i>
+                            <span>ACCURACY: 99.4%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Statistics Counters Section -->
+            <div class="stats-section">
+                <div class="container stats-container">
+                    <div class="stat-card glass-card">
+                        <div class="stat-icon"><i class="fa-solid fa-microchip"></i></div>
+                        <h3 class="stat-number" data-target="99.4">0</h3>
+                        <p class="stat-label">AI Accuracy Rate</p>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <div class="stat-icon"><i class="fa-solid fa-file-invoice"></i></div>
+                        <h3 class="stat-number" data-target="15000">0</h3>
+                        <p class="stat-label">Contracts Analyzed</p>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <div class="stat-icon"><i class="fa-solid fa-gauge-high"></i></div>
+                        <h3 class="stat-number" data-target="2">0</h3>
+                        <p class="stat-label">Second Avg Response</p>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <div class="stat-icon"><i class="fa-solid fa-user-shield"></i></div>
+                        <h3 class="stat-number" data-target="100">0</h3>
+                        <p class="stat-label">Data Privacy Level (%)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTRODUCTION SECTION -->
+        <section class="intro-section container">
+            <div class="section-header center-text">
+                <h2 class="section-title">The Future of Legal Assistance</h2>
+                <p class="section-subtitle">Bridging the gap between complex legal code and daily human understanding with state-of-the-art Large Language Models customized for judicial systems.</p>
+            </div>
+            <div class="intro-grid">
+                <div class="intro-card glass-card">
+                    <i class="fa-solid fa-circle-check intro-card-icon text-purple"></i>
+                    <h3>Accessible to All</h3>
+                    <p>Democratizing legal resources, translation of legalese into layman's terms, and providing instant definitions of complex legal vocabulary.</p>
+                </div>
+                <div class="intro-card glass-card">
+                    <i class="fa-solid fa-business-time intro-card-icon text-gold"></i>
+                    <h3>Built for Enterprise</h3>
+                    <p>Speed up commercial deal flows, identify hidden liability risks, and verify compliance with regional laws automatically.</p>
+                </div>
+                <div class="intro-card glass-card">
+                    <i class="fa-solid fa-scale-balanced intro-card-icon text-teal"></i>
+                    <h3>Empowering Lawyers</h3>
+                    <p>Not a replacement, but an amplifier. Cut legal research time from days to minutes, drafting documents seamlessly from vetted templates.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURED SERVICES SECTION -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="section-header center-text">
+                    <span class="section-tag font-gold">Our Offerings</span>
+                    <h2 class="section-title">Intelligent Legal Services</h2>
+                    <p class="section-subtitle">A comprehensive suite of LegalTech tools tailored to automate document generation, search law precedents, and ensure compliance.</p>
+                </div>
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card glass-card">
+                        <div class="service-glow-bg"></div>
+                        <div class="service-header">
+                            <div class="service-icon purple-bg"><i class="fa-solid fa-robot"></i></div>
+                            <span class="service-badge">Core AI</span>
+                        </div>
+                        <h3>AI Legal Assistant</h3>
+                        <p>Receive immediate contextual guidance on civil, commercial, corporate, and labor disputes based on active legal databases.</p>
+                        <ul class="service-bullets">
+                            <li><i class="fa-solid fa-circle-chevron-right text-purple"></i> Smart conversational reasoning</li>
+                            <li><i class="fa-solid fa-circle-chevron-right text-purple"></i> Instant definition of legal terms</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card glass-card">
+                        <div class="service-glow-bg"></div>
+                        <div class="service-header">
+                            <div class="service-icon gold-bg"><i class="fa-solid fa-file-lines"></i></div>
+                            <span class="service-badge gold-border">Summarizer</span>
+                        </div>
+                        <h3>Legal Document Summarization</h3>
+                        <p>Upload multi-page contracts, affidavits, or case laws and get brief, bullet-point summaries of critical clauses.</p>
+                        <ul class="service-bullets">
+                            <li><i class="fa-solid fa-circle-chevron-right text-gold"></i> Extract obligations & timelines</li>
+                            <li><i class="fa-solid fa-circle-chevron-right text-gold"></i> Translate legalese to plain language</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card glass-card">
+                        <div class="service-glow-bg"></div>
+                        <div class="service-header">
+                            <div class="service-icon teal-bg"><i class="fa-solid fa-signature"></i></div>
+                            <span class="service-badge teal-border">Risk Check</span>
+                        </div>
+                        <h3>Contract Analysis</h3>
+                        <p>Highlight potential liabilities, missing details, standard clauses, and unfair terms in agreements automatically.</p>
+                        <ul class="service-bullets">
+                            <li><i class="fa-solid fa-circle-chevron-right text-teal"></i> Identifies severe liability risks</li>
+                            <li><i class="fa-solid fa-circle-chevron-right text-teal"></i> Clause modification advice</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-card glass-card">
+                        <div class="service-glow-bg"></div>
+                        <div class="service-header">
+                            <div class="service-icon blue-bg"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                            <span class="service-badge blue-border">Research</span>
+                        </div>
+                        <h3>Legal Research</h3>
+                        <p>Search through thousands of court judgments, statutory laws, and code regulations using semantic natural language query.</p>
+                        <ul class="service-bullets">
+                            <li><i class="fa-solid fa-circle-chevron-right text-blue"></i> Match relevant court precedents</li>
+                            <li><i class="fa-solid fa-circle-chevron-right text-blue"></i> Up-to-date legislation references</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="service-card glass-card">
+                        <div class="service-glow-bg"></div>
+                        <div class="service-header">
+                            <div class="service-icon purple-bg"><i class="fa-solid fa-folder-open"></i></div>
+                            <span class="service-badge">Templates</span>
+                        </div>
+                        <h3>Legal Templates</h3>
+                        <p>Generate professionally formatted NDAs, employment agreements, software licenses, lease deeds, and legal notices.</p>
+                        <ul class="service-bullets">
+                            <li><i class="fa-solid fa-circle-chevron-right text-purple"></i> Dynamic input customization</li>
+                            <li><i class="fa-solid fa-circle-chevron-right text-purple"></i> Instantly ready PDF downloads</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 6 -->
+                    <div class="service-card glass-card">
+                        <div class="service-glow-bg"></div>
+                        <div class="service-header">
+                            <div class="service-icon gold-bg"><i class="fa-solid fa-building-shield"></i></div>
+                            <span class="service-badge gold-border">Audit</span>
+                        </div>
+                        <h3>Compliance Assistance</h3>
+                        <p>Ensure your company satisfies GDPR, HIPAA, financial regulations, and startup labor compliance guidelines automatically.</p>
+                        <ul class="service-bullets">
+                            <li><i class="fa-solid fa-circle-chevron-right text-gold"></i> Dynamic regulatory checklists</li>
+                            <li><i class="fa-solid fa-circle-chevron-right text-gold"></i> Compliance risk reports</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTERACTIVE AI FEATURES DEMO -->
+        <section id="features" class="interactive-demo-section">
+            <div class="container">
+                <div class="section-header center-text">
+                    <span class="section-tag font-teal">Experience Nyaya AI</span>
+                    <h2 class="section-title">Futuristic Interactive AI Features</h2>
+                    <p class="section-subtitle">Interact directly with our functional simulator tools to experience the intelligence and speed of Nyaya AI in real time.</p>
+                </div>
+                
+                <div class="demo-wrapper glass-card">
+                    <!-- Demo Menu Navigation -->
+                    <div class="demo-tabs">
+                        <button class="demo-tab active" data-tab="chat">
+                            <i class="fa-solid fa-comments"></i> <span>Smart AI Chat</span>
+                        </button>
+                        <button class="demo-tab" data-tab="scanner">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i> <span>Document Scanner</span>
+                        </button>
+                        <button class="demo-tab" data-tab="contract">
+                            <i class="fa-solid fa-shield-halved"></i> <span>Contract Review</span>
+                        </button>
+                    </div>
+
+                    <!-- Demo Content Container -->
+                    <div class="demo-content">
+                        <!-- 1. SMART AI CHAT SIMULATOR -->
+                        <div class="demo-pane active" id="pane-chat">
+                            <div class="chat-container">
+                                <div class="chat-header">
+                                    <div class="chat-avatar">
+                                        <i class="fa-solid fa-scale-balanced text-gold"></i>
+                                        <span class="online-indicator"></span>
+                                    </div>
+                                    <div class="chat-info">
+                                        <h4>Nyaya Legal Assistant</h4>
+                                        <p>Powered by Nyaya-Legal-LLM</p>
+                                    </div>
+                                </div>
+                                <div class="chat-messages" id="chat-messages">
+                                    <div class="chat-msg bot-msg">
+                                        <p>Hello! I am Nyaya AI, your digital legal assistant. How can I help you today? Feel free to ask a legal question or click one of the templates below:</p>
+                                    </div>
+                                </div>
+                                <div class="chat-suggestions">
+                                    <button class="chat-suggest-btn">What is a non-disclosure agreement (NDA)?</button>
+                                    <button class="chat-suggest-btn">What does "indemnity" mean in a contract?</button>
+                                    <button class="chat-suggest-btn">How long does intellectual property protection last?</button>
+                                    <button class="chat-suggest-btn">Do startups need a privacy policy?</button>
+                                </div>
+                                <form class="chat-input-area" id="chat-form">
+                                    <input type="text" id="chat-input" placeholder="Ask Nyaya AI a legal question..." required autocomplete="off">
+                                    <button type="submit" class="chat-send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- 2. DOCUMENT SCANNER SIMULATOR -->
+                        <div class="demo-pane" id="pane-scanner">
+                            <div class="scanner-container">
+                                <div class="scanner-upload-area" id="scanner-upload">
+                                    <div class="scanner-graphic">
+                                        <i class="fa-solid fa-file-pdf document-icon text-purple"></i>
+                                        <div class="laser-scanner"></div>
+                                    </div>
+                                    <h3>Legal Document Scanner</h3>
+                                    <p>Select a sample document below to simulate instant optical scanning and deep legal auditing:</p>
+                                    <div class="sample-doc-buttons">
+                                        <button class="btn btn-secondary select-sample-doc" data-doc="employment">
+                                            <i class="fa-solid fa-file-contract"></i> Employment_Agreement.pdf
+                                        </button>
+                                        <button class="btn btn-secondary select-sample-doc" data-doc="lease">
+                                            <i class="fa-solid fa-building"></i> Commercial_Lease.pdf
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="scanner-progress-area hidden" id="scanner-progress">
+                                    <div class="progress-bar-wrapper">
+                                        <div class="progress-bar-fill" id="progress-fill"></div>
+                                    </div>
+                                    <p id="scanner-status">OCR Engine extracting text data...</p>
+                                </div>
+                                <div class="scanner-results hidden" id="scanner-results">
+                                    <div class="results-header">
+                                        <i class="fa-solid fa-circle-check text-teal"></i>
+                                        <div>
+                                            <h4>Scan Completed successfully</h4>
+                                            <p>Processed 12 pages in 1.8 seconds</p>
+                                        </div>
+                                    </div>
+                                    <div class="results-grid">
+                                        <div class="result-metric card-light">
+                                            <span class="metric-val text-red">High Risk</span>
+                                            <span class="metric-label" id="scanner-high-risks">2 Clauses</span>
+                                        </div>
+                                        <div class="result-metric card-light">
+                                            <span class="metric-val text-gold">Medium Risk</span>
+                                            <span class="metric-label" id="scanner-med-risks">4 Clauses</span>
+                                        </div>
+                                        <div class="result-metric card-light">
+                                            <span class="metric-val text-teal">Compliance Score</span>
+                                            <span class="metric-label">87%</span>
+                                        </div>
+                                    </div>
+                                    <div class="results-actions">
+                                        <button class="btn btn-primary" id="reset-scanner">Scan Another Document</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 3. AI CONTRACT REVIEW SIMULATOR -->
+                        <div class="demo-pane" id="pane-contract">
+                            <div class="contract-container">
+                                <div class="contract-split">
+                                    <div class="contract-doc-view">
+                                        <div class="doc-header">
+                                            <i class="fa-solid fa-file-signature text-blue"></i>
+                                            <span>NDA_Agreement_Draft.docx</span>
+                                        </div>
+                                        <div class="doc-body font-mono">
+                                            <p>This Non-Disclosure Agreement (the "Agreement") is entered into by and between Nyaya Tech Corp and Acme LLC...</p>
+                                            <p class="highlighted-clause h-red" data-risk="1">
+                                                <strong>Section 4. Indemnification:</strong> The Receiving Party agrees to indemnify, defend, and hold harmless the Disclosing Party from any and all damages, liabilities, losses, costs, and attorney's fees arising directly or indirectly from any unauthorized breach of this Agreement without cap.
+                                            </p>
+                                            <p><strong>Section 5. Term:</strong> The obligations of confidentiality shall remain in effect for a period of five (5) years from the date of disclosure...</p>
+                                            <p class="highlighted-clause h-gold" data-risk="2">
+                                                <strong>Section 8. Governing Law:</strong> This Agreement shall be governed by, and construed in accordance with, the laws of the State of Delaware, and any disputes shall be resolved exclusively in the courts of Wilmington, Delaware.
+                                            </p>
+                                            <p><strong>Section 9. Severability:</strong> If any provision of this Agreement is held to be invalid or unenforceable...</p>
+                                        </div>
+                                    </div>
+                                    <div class="contract-audit-panel">
+                                        <h4>Risk Audit Analysis</h4>
+                                        <div class="audit-list">
+                                            <div class="audit-item risk-high active" id="audit-risk-1">
+                                                <div class="audit-risk-header">
+                                                    <span class="risk-pill bg-red">CRITICAL RISK</span>
+                                                    <span>Indemnification Cap</span>
+                                                </div>
+                                                <p>Section 4 forces the receiving party to indemnify all losses "without cap". Uncapped indemnities pose a severe financial risk for startups.</p>
+                                                <div class="audit-suggestion">
+                                                    <strong>Recommendation:</strong> Propose a maximum liability cap equal to fees paid under this agreement.
+                                                </div>
+                                            </div>
+                                            <div class="audit-item risk-med" id="audit-risk-2">
+                                                <div class="audit-risk-header">
+                                                    <span class="risk-pill bg-gold">MODERATE WARNING</span>
+                                                    <span>Jurisdiction</span>
+                                                </div>
+                                                <p>Section 8 specifies Delaware courts. Verify if your local corporation has representation or if arbitration in a closer region is preferred.</p>
+                                                <div class="audit-suggestion">
+                                                    <strong>Recommendation:</strong> Propose local arbitration or state courts to minimize travel expenses and legal overhead.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secondary Features Highlights -->
+                <div class="secondary-features-grid">
+                    <div class="sec-feat-card glass-card">
+                        <i class="fa-solid fa-magnifying-glass text-gold"></i>
+                        <h4>Precision Case Search</h4>
+                        <p>Semantic legal search engine cross-references millions of national judicial precedents.</p>
+                    </div>
+                    <div class="sec-feat-card glass-card">
+                        <i class="fa-solid fa-microphone text-purple"></i>
+                        <h4>Voice Dictation Assistant</h4>
+                        <p>Explain your legal concerns verbally and have our AI record, transcribe, and research instantly.</p>
+                    </div>
+                    <div class="sec-feat-card glass-card">
+                        <i class="fa-solid fa-language text-teal"></i>
+                        <h4>Multi-Language Support</h4>
+                        <p>Seamless translation of legal terms across Hindi, English, Spanish, French, and 12 other dialects.</p>
+                    </div>
+                    <div class="sec-feat-card glass-card">
+                        <i class="fa-solid fa-cloud-shield text-blue"></i>
+                        <h4>Secure Cloud Storage</h4>
+                        <p>All scanned files are stored in decentralized, zero-knowledge encrypted cloud environments.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT US SECTION -->
+        <section id="about" class="about-section container">
+            <div class="section-header center-text">
+                <span class="section-tag font-purple">Our Story</span>
+                <h2 class="section-title">The Digital Scales of Justice</h2>
+                <p class="section-subtitle">Nyaya AI was founded by top tech engineers and seasoned legal advisors to build accessible, transparent judicial technology.</p>
+            </div>
+            
+            <div class="about-vision-grid">
+                <div class="vision-card glass-card">
+                    <i class="fa-solid fa-bullseye text-gold"></i>
+                    <h3>Our Mission</h3>
+                    <p>To deliver fast, reliable, and accessible legal guidance to businesses and individuals, breaking down barriers of complex vocabulary and cost.</p>
+                </div>
+                <div class="vision-card glass-card">
+                    <i class="fa-solid fa-eye text-teal"></i>
+                    <h3>Our Vision</h3>
+                    <p>A society where legal insights are a click away, making fair representation, document audits, and contracts transparent for everyone, everywhere.</p>
+                </div>
+            </div>
+
+            <!-- Timeline of Milestones -->
+            <div class="timeline-wrapper">
+                <h3 class="timeline-header center-text">Our Journey & Milestones</h3>
+                <div class="timeline">
+                    <div class="timeline-item left">
+                        <div class="timeline-content glass-card">
+                            <span class="time-date">Q2 2024</span>
+                            <h4>The Conception</h4>
+                            <p>Founded in Silicon Valley and Bangalore by AI engineers and corporate attorneys to address legal search inefficiencies.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right">
+                        <div class="timeline-content glass-card">
+                            <span class="time-date">Q4 2024</span>
+                            <h4>Seed Funding & Prototype</h4>
+                            <p>Secured $2.4M seed funding from leading Tech VCs. Released the initial version of Nyaya-Legal-LLM trained on federal code.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item left">
+                        <div class="timeline-content glass-card">
+                            <span class="time-date">Q2 2025</span>
+                            <h4>Enterprise Rollout</h4>
+                            <p>Launched the AI Contract Auditor, securing partnerships with over 50 startups and tech companies.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right">
+                        <div class="timeline-content glass-card">
+                            <span class="time-date">Q1 2026</span>
+                            <h4>Nyaya AI 2.0 Launch</h4>
+                            <p>Upgraded models with multi-jurisdictional support, real-time voice, and visual OCR document parsing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY CHOOSE US SECTION -->
+        <section class="why-choose-section">
+            <div class="container">
+                <div class="section-header center-text">
+                    <span class="section-tag font-gold">Why Nyaya AI</span>
+                    <h2 class="section-title">Designed for Unmatched Accuracy</h2>
+                    <p class="section-subtitle">Discover why thousands of businesses, legal practitioners, and startups rely on Nyaya AI to secure their legal compliance.</p>
+                </div>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-card glass-card">
+                        <div class="benefit-icon"><i class="fa-solid fa-gauge-high text-teal"></i></div>
+                        <h3>Blazing Fast</h3>
+                        <p>Generate legally compliant contracts and analyze massive files in seconds instead of waiting days for counsel reviews.</p>
+                    </div>
+                    <div class="benefit-card glass-card">
+                        <div class="benefit-icon"><i class="fa-solid fa-shield-halved text-purple"></i></div>
+                        <h3>Military-Grade Security</h3>
+                        <p>Your documents are encrypted using AES-256 zero-knowledge architectures, ensuring client confidentiality remains private.</p>
+                    </div>
+                    <div class="benefit-card glass-card">
+                        <div class="benefit-icon"><i class="fa-solid fa-brain text-blue"></i></div>
+                        <h3>AI Powered Engine</h3>
+                        <p>Engineered using highly tuned specialized legal parameters that outperform vanilla LLMs in legal exam benchmarks.</p>
+                    </div>
+                    <div class="benefit-card glass-card">
+                        <div class="benefit-icon"><i class="fa-solid fa-wand-magic-sparkles text-gold"></i></div>
+                        <h3>Super Easy to Use</h3>
+                        <p>No training required. A drag-and-drop conversational system built with intuitive workflows similar to modern design tools.</p>
+                    </div>
+                    <div class="benefit-card glass-card">
+                        <div class="benefit-icon"><i class="fa-solid fa-bullseye text-red"></i></div>
+                        <h3>Highly Accurate</h3>
+                        <p>Nyaya AI undergoes rigorous evaluations by board attorneys, resulting in a industry-leading 99.4% audit accuracy rate.</p>
+                    </div>
+                    <div class="benefit-card glass-card">
+                        <div class="benefit-icon"><i class="fa-solid fa-clock text-teal"></i></div>
+                        <h3>Available 24/7/365</h3>
+                        <p>Legal bottlenecks don't wait for business hours. Get advice and generate standard agreements in the middle of the night.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CASE STUDIES SECTION -->
+        <section id="case-studies" class="case-studies-section container">
+            <div class="section-header center-text">
+                <span class="section-tag font-blue">Case Studies</span>
+                <h2 class="section-title">AI-Powered Legal Workflows in Action</h2>
+                <p class="section-subtitle">Read how our customers optimized operations, minimized litigation costs, and saved time using our tools.</p>
+            </div>
+            
+            <div class="cases-grid">
+                <!-- Case 1 -->
+                <div class="case-card glass-card">
+                    <div class="case-image-wrapper">
+                        <img src="assets/digital_justice.png" alt="Digital Case Study illustration" class="case-img">
+                    </div>
+                    <div class="case-body">
+                        <div class="case-meta">
+                            <span class="case-category">FinTech Startup</span>
+                            <span class="case-savings"><i class="fa-solid fa-piggy-bank"></i> Saved 80% Costs</span>
+                        </div>
+                        <h3>Automated Compliance for PayGiga</h3>
+                        <p>PayGiga used Nyaya's compliance checker to align their multi-national merchant policies with GDPR regulations within 48 hours.</p>
+                        <a href="#" class="case-link">Read Full Case Study <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Case 2 -->
+                <div class="case-card glass-card">
+                    <div class="case-image-wrapper">
+                        <img src="assets/contract_scanner.png" alt="Contract review Case Study illustration" class="case-img">
+                    </div>
+                    <div class="case-body">
+                        <div class="case-meta">
+                            <span class="case-category">Venture Capital</span>
+                            <span class="case-savings"><i class="fa-solid fa-clock"></i> Saved 20+ Hours/Week</span>
+                        </div>
+                        <h3>Accelerated Due Diligence for Apex VC</h3>
+                        <p>Apex VC automated the risk check of investment NDA filings, flagging liabilities in standard term sheets instantaneously.</p>
+                        <a href="#" class="case-link">Read Full Case Study <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TEAM SECTION -->
+        <section id="team" class="team-section">
+            <div class="container">
+                <div class="section-header center-text">
+                    <span class="section-tag font-purple">The Brains</span>
+                    <h2 class="section-title">Leadership & Advisory Board</h2>
+                    <p class="section-subtitle">Meet the interdisciplinary pioneers combining advanced technology and legislative experience.</p>
+                </div>
+                
+                <div class="team-grid">
+                    <!-- Member 1 -->
+                    <div class="team-card glass-card">
+                        <div class="team-avatar-wrapper">
+                            <div class="team-avatar-placeholder purple-gradient">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                        </div>
+                        <h3>Aarav Sharma</h3>
+                        <p class="team-role">Founder & CEO</p>
+                        <p class="team-bio">Former Corporate Attorney at White & Case with 12 years of tech policy and contract law experience.</p>
+                        <div class="team-socials">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Member 2 -->
+                    <div class="team-card glass-card">
+                        <div class="team-avatar-wrapper">
+                            <div class="team-avatar-placeholder blue-gradient">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                        </div>
+                        <h3>Dr. Ananya Rao</h3>
+                        <p class="team-role">Chief AI Architect</p>
+                        <p class="team-bio">PhD in NLP from Stanford. Former Lead Research Engineer at OpenAI working on GPT reinforcement alignment.</p>
+                        <div class="team-socials">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Member 3 -->
+                    <div class="team-card glass-card">
+                        <div class="team-avatar-wrapper">
+                            <div class="team-avatar-placeholder gold-gradient">
+                                <i class="fa-solid fa-gavel"></i>
+                            </div>
+                        </div>
+                        <h3>Vikram Malhotra</h3>
+                        <p class="team-role">Senior Legal Advisor</p>
+                        <p class="team-bio">Retired Justice and Senior Legal Consultant specializing in intellectual property and compliance guidelines.</p>
+                        <div class="team-socials">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Member 4 -->
+                    <div class="team-card glass-card">
+                        <div class="team-avatar-wrapper">
+                            <div class="team-avatar-placeholder teal-gradient">
+                                <i class="fa-solid fa-terminal"></i>
+                            </div>
+                        </div>
+                        <h3>Rohan Das</h3>
+                        <p class="team-role">Lead Software Developer</p>
+                        <p class="team-bio">Ex-Stripe Infrastructure engineer. Obsessed with high-performance, glassmorphic UI interfaces and web APIs.</p>
+                        <div class="team-socials">
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS SECTION -->
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="section-header center-text">
+                    <span class="section-tag font-gold">Testimonials</span>
+                    <h2 class="section-title">What Legal Professionals Say</h2>
+                    <p class="section-subtitle">Read feedback from our clients, partners, and corporate attorneys using Nyaya AI.</p>
+                </div>
+                
+                <div class="testimonial-carousel-wrapper">
+                    <div class="testimonial-carousel" id="testimonial-carousel">
+                        <!-- Card 1 -->
+                        <div class="testimonial-card glass-card">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Nyaya AI revolutionized our legal review timeline. Contract risk analysis that previously took three business days is now flagged in 30 seconds, improving deal closure times significantly."</p>
+                            <div class="reviewer-info">
+                                <div class="reviewer-initials purple-bg">KB</div>
+                                <div>
+                                    <h4>Karan Bhasin</h4>
+                                    <p>General Counsel, NeoFintech</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="testimonial-card glass-card">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"As a startup founder, I couldn't afford expensive attorney hours for basic corporate contracts. Nyaya's legal templates and automated analyzer gave me peace of mind when drafting NDAs."</p>
+                            <div class="reviewer-info">
+                                <div class="reviewer-initials gold-bg">SM</div>
+                                <div>
+                                    <h4>Sarah Miller</h4>
+                                    <p>Co-Founder, SparkAI</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="testimonial-card glass-card">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <p class="testimonial-text">"The accuracy of the semantic case law research is impressive. It surfaces obscure federal rulings that standard search portals completely omit. A must-have for litigation experts."</p>
+                            <div class="reviewer-info">
+                                <div class="reviewer-initials teal-bg">RJ</div>
+                                <div>
+                                    <h4>Rajesh Joshi</h4>
+                                    <p>Senior Partner, Joshi & Associates</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active" data-index="0"></span>
+                        <span class="carousel-dot" data-index="1"></span>
+                        <span class="carousel-dot" data-index="2"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LEGAL RESOURCES (BLOG) SECTION -->
+        <section id="resources" class="resources-section container">
+            <div class="section-header center-text">
+                <span class="section-tag font-teal">Legal Library</span>
+                <h2 class="section-title">Articles, Guides & Learning Resources</h2>
+                <p class="section-subtitle">Stay informed with the latest insights on legal tech regulations, intellectual property laws, and digital compliance standards.</p>
+            </div>
+            
+            <div class="resources-grid">
+                <!-- Article 1 -->
+                <article class="resource-card glass-card">
+                    <div class="resource-badge">Legal Technology</div>
+                    <h3>Understanding Artificial Intelligence Regulatory Frameworks</h3>
+                    <p>An in-depth review of how new AI safety bills and legal compliance affect software startups worldwide.</p>
+                    <div class="resource-footer">
+                        <span>5 min read</span>
+                        <a href="#" class="read-more">Read Guide <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="resource-card glass-card">
+                    <div class="resource-badge">Contracts</div>
+                    <h3>Top 5 Critical Mistakes to Avoid in Startup Co-founder Agreements</h3>
+                    <p>Prevent future equity disputes by learning exactly what terms are frequently litigated under federal corporate law.</p>
+                    <div class="resource-footer">
+                        <span>8 min read</span>
+                        <a href="#" class="read-more">Read Guide <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="resource-card glass-card">
+                    <div class="resource-badge">Privacy</div>
+                    <h3>GDPR Compliance Checklists for Cross-Border SaaS Products</h3>
+                    <p>A step-by-step documentation guide to auditing user privacy rules and securing database pipelines.</p>
+                    <div class="resource-footer">
+                        <span>6 min read</span>
+                        <a href="#" class="read-more">Read Guide <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header center-text">
+                    <span class="section-tag font-purple">FAQ</span>
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Everything you need to know about the Nyaya Legal AI platform, data safety, and pricing structures.</p>
+                </div>
+                
+                <div class="faq-accordion-wrapper">
+                    <!-- FAQ 1 -->
+                    <div class="faq-item glass-card">
+                        <button class="faq-trigger">
+                            <span>Is Nyaya AI a replacement for a certified lawyer?</span>
+                            <i class="fa-solid fa-plus faq-icon"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p>No, Nyaya AI is an intelligent legal assistant designed to simplify research, draft documents, and audit contracts. It does not provide official legal representation or establish an attorney-client relationship. We recommend consulting a licensed legal practitioner for complex representation in court filings.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="faq-item glass-card">
+                        <button class="faq-trigger">
+                            <span>How secure is my sensitive document upload?</span>
+                            <i class="fa-solid fa-plus faq-icon"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p>Data security is our top priority. We use zero-knowledge architecture with AES-256 bit encryption at rest and TLS 1.3 in transit. Your uploaded contracts and files are processed strictly to extract insights and are never used to train global models, guaranteeing complete confidentiality.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="faq-item glass-card">
+                        <button class="faq-trigger">
+                            <span>Does the AI support languages other than English?</span>
+                            <i class="fa-solid fa-plus faq-icon"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p>Yes! Nyaya AI is optimized for multi-language legal frameworks. It supports major regional languages including Hindi, Spanish, French, German, Arabic, and Portuguese. It translates complex legal notices and documents while retaining exact constitutional definitions.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="faq-item glass-card">
+                        <button class="faq-trigger">
+                            <span>What database does the case semantic search rely on?</span>
+                            <i class="fa-solid fa-plus faq-icon"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p>Nyaya AI utilizes a dynamic database updated hourly containing Supreme Court rulings, high court decisions, federal codes, state regulations, and compliance guidelines across major jurisdictions worldwide.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact-section container">
+            <div class="section-header center-text">
+                <span class="section-tag font-gold">Get in Touch</span>
+                <h2 class="section-title">Talk to our LegalTech Consultants</h2>
+                <p class="section-subtitle">Reach out to request an investor demo, enquire about custom enterprise solutions, or ask a question.</p>
+            </div>
+            
+            <div class="contact-split">
+                <!-- Info & Map -->
+                <div class="contact-info-panel glass-card">
+                    <h3>Contact Information</h3>
+                    <p>Connect with our engineering or support team directly through our active channels.</p>
+                    
+                    <div class="info-items">
+                        <div class="info-item">
+                            <i class="fa-solid fa-envelope info-icon"></i>
+                            <div>
+                                <span>Email Us</span>
+                                <a href="mailto:info@nyaya.ai">info@nyaya.ai</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-phone info-icon"></i>
+                            <div>
+                                <span>Phone Number</span>
+                                <a href="tel:+18005556929">+1 (800) 555-NYAYA</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-location-dot info-icon"></i>
+                            <div>
+                                <span>Headquarters</span>
+                                <p>500 Justice Boulevard, Tech District, San Francisco, CA 94107</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Handles -->
+                    <div class="contact-socials-wrapper">
+                        <h4>Follow Our Progress</h4>
+                        <div class="social-icons">
+                            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Holographic Office Map Simulation -->
+                    <div class="office-map-widget">
+                        <div class="map-glow"></div>
+                        <div class="map-overlay">
+                            <i class="fa-solid fa-location-pin text-gold ping"></i>
+                            <span>Nyaya HQ (San Francisco)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-panel glass-card">
+                    <h3>Send Us a Message</h3>
+                    <form id="contact-form" class="styled-form">
+                        <div class="form-row-2">
+                            <div class="form-group">
+                                <label for="form-name">Full Name</label>
+                                <input type="text" id="form-name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email">Email Address</label>
+                                <input type="email" id="form-email" placeholder="john@company.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-subject">Subject</label>
+                            <input type="text" id="form-subject" placeholder="Enterprise Consultation" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message">Message Details</label>
+                            <textarea id="form-message" rows="5" placeholder="Tell us about your legal workload or enterprise inquiries..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full btn-glow" id="form-submit-btn">
+                            <span>Submit Request</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <div class="form-success-msg hidden" id="form-success">
+                        <i class="fa-solid fa-circle-check text-teal"></i>
+                        <h4>Message Sent Successfully!</h4>
+                        <p>Our consultants will reach back to you within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="nav-logo">
+                    <div class="logo-icon">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                    <span>Nyaya<span class="gold-text">AI</span></span>
+                </a>
+                <p class="footer-desc">Legal Technology built to simplify compliance, audit agreements, and research case laws dynamically with advanced intelligence.</p>
+            </div>
+            
+            <div class="footer-links-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#team">Our Team</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#case-studies">Success Stories</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4>Legal Resources</h4>
+                <ul>
+                    <li><a href="#resources">Blogs & Articles</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Guidelines</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4>Subscribe to Nyaya Brief</h4>
+                <p>Get weekly analyses of changing AI regulations and LegalTech advancements directly in your inbox.</p>
+                <form id="newsletter-form" class="newsletter-input-group">
+                    <input type="email" placeholder="enter your email..." required>
+                    <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+                <div class="newsletter-success hidden" id="newsletter-success">
+                    <p class="text-teal"><i class="fa-solid fa-circle-check"></i> Subscribed successfully!</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 Nyaya AI Inc. All rights reserved. Designed for digital justice advocacy.</p>
+        </div>
+    </footer>
+
+    <!-- Javascript Script File -->
+    <script src="script.js"></script>
+</body>
+</html>
