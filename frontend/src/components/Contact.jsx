@@ -12,7 +12,7 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setStatus('submitting');
-    
+
     // Simulate API call
     setTimeout(() => {
       setStatus('submitted');
@@ -27,33 +27,33 @@ export default function Contact() {
         <h2 className="section-title">Talk to our LegalTech Consultants</h2>
         <p className="section-subtitle">Reach out to request an investor demo, enquire about custom enterprise solutions, or ask a question.</p>
       </div>
-      
+
       <div className="contact-split">
         {/* Info & Map */}
         <div className="contact-info-panel glass-card">
           <h3>Contact Information</h3>
           <p>Connect with our engineering or support team directly through our active channels.</p>
-          
+
           <div className="info-items">
             <div className="info-item">
               <i className="fa-solid fa-envelope info-icon"></i>
               <div>
                 <span>Email Us</span>
-                <a href="mailto:info@nyaya.ai">info@nyaya.ai</a>
+                <a href="mailto:info@nyaya.ai">NyayaAl@gmail.com</a>
               </div>
             </div>
             <div className="info-item">
               <i className="fa-solid fa-phone info-icon"></i>
               <div>
                 <span>Phone Number</span>
-                <a href="tel:+18005556929">+1 (800) 555-NYAYA</a>
+                <a href="tel:+18005556929">+8919647087</a>
               </div>
             </div>
             <div className="info-item">
               <i className="fa-solid fa-location-dot info-icon"></i>
               <div>
                 <span>Headquarters</span>
-                <p>500 Justice Boulevard, Tech District, San Francisco, CA 94107</p>
+                <p>Tel,Hyd</p>
               </div>
             </div>
           </div>
@@ -87,11 +87,11 @@ export default function Contact() {
               <div className="form-row-2">
                 <div className="form-group">
                   <label htmlFor="form-name">Full Name</label>
-                  <input 
-                    type="text" 
-                    id="form-name" 
-                    placeholder="John Doe" 
-                    required 
+                  <input
+                    type="text"
+                    id="form-name"
+                    placeholder="Name"
+                    required
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     disabled={status === 'submitting'}
@@ -99,11 +99,11 @@ export default function Contact() {
                 </div>
                 <div className="form-group">
                   <label htmlFor="form-email">Email Address</label>
-                  <input 
-                    type="email" 
-                    id="form-email" 
-                    placeholder="john@company.com" 
-                    required 
+                  <input
+                    type="email"
+                    id="form-email"
+                    placeholder="Eamil"
+                    required
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     disabled={status === 'submitting'}
@@ -112,11 +112,11 @@ export default function Contact() {
               </div>
               <div className="form-group">
                 <label htmlFor="form-subject">Subject</label>
-                <input 
-                  type="text" 
-                  id="form-subject" 
-                  placeholder="Enterprise Consultation" 
-                  required 
+                <input
+                  type="text"
+                  id="form-subject"
+                  placeholder="Enterprise Consultation"
+                  required
                   value={formData.subject}
                   onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                   disabled={status === 'submitting'}
@@ -124,19 +124,19 @@ export default function Contact() {
               </div>
               <div className="form-group">
                 <label htmlFor="form-message">Message Details</label>
-                <textarea 
-                  id="form-message" 
-                  rows="5" 
-                  placeholder="Tell us about your legal workload or enterprise inquiries..." 
-                  required 
+                <textarea
+                  id="form-message"
+                  rows="5"
+                  placeholder="Tell us about your legal workload or enterprise inquiries..."
+                  required
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   disabled={status === 'submitting'}
                 ></textarea>
               </div>
-              <button 
-                type="submit" 
-                className="btn btn-primary btn-full btn-glow" 
+              <button
+                type="submit"
+                className="btn btn-primary btn-full btn-glow"
                 id="form-submit-btn"
                 disabled={status === 'submitting'}
               >

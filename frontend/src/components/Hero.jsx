@@ -92,21 +92,6 @@ export default function Hero() {
               <span>Explore Services</span>
             </a>
           </div>
-        </div>
-        <div className="hero-visual animate-fade-in delay-1 animated">
-          <div className="image-wrapper glass-card">
-            <img src="assets/hero_ai_assistant.png" alt="Nyaya AI Assistant 3D Graphic" className="hero-image" />
-            {/* Floating Holographic UI Overlays */}
-            <div className="holo-badge badge-1 floating">
-              <i className="fa-solid fa-shield-halved text-gold"></i>
-              <span>SECURE VAULT</span>
-            </div>
-            <div className="holo-badge badge-2 floating-delayed">
-              <i className="fa-solid fa-bolt text-teal"></i>
-              <span>ACCURACY: 99.4%</span>
-            </div>
-          </div>
-        </div>
       </div>
       
       {/* Statistics Counters Section */}

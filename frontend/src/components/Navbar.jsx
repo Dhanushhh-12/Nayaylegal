@@ -63,9 +63,7 @@ export default function Navbar() {
     <header className={`navbar ${isScrolled ? 'scrolled' : ''}`} id="navbar">
       <div className="nav-container">
         <a href="#" className="nav-logo" onClick={() => handleLinkClick('home')}>
-          <div className="logo-icon">
-            <i className="fa-solid fa-scale-balanced"></i>
-          </div>
+          <img src="assets/logo.png" alt="Nyaya AI Logo" className="logo-img" />
           <span>Nyaya<span className="gold-text">AI</span></span>
         </a>
         

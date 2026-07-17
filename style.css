@@ -4,23 +4,23 @@
 
 /* DESIGN SYSTEM VARIABLES */
 :root {
-    --bg-dark: #0a0b0d;          /* Matte Graphite Carbon */
-    --bg-darker: #050506;        /* Deep Obsidian Carbon */
-    --card-bg: rgba(18, 20, 24, 0.7); /* Smoked titanium gray glass */
-    --card-border: rgba(255, 255, 255, 0.05);
-    --card-hover-border: #d4af37; /* Metallic Brushed Gold */
+    --bg-dark: #000000;          /* Pure Obsidian Black */
+    --bg-darker: #000000;        /* Deep Black Carbon */
+    --card-bg: rgba(15, 15, 15, 0.75); /* Smoked Black Glass */
+    --card-border: rgba(255, 255, 255, 0.08);
+    --card-hover-border: #cca936; /* Metallic Gold Accent */
 
-    /* Premium Color Palette (Jewel Tones, Wood Browns, Metallic Accents) */
-    --color-primary: #b45309;    /* Crafted Walnut Copper */
-    --color-secondary: #78350f;  /* Deep Mahogany Wood Brown */
-    --color-royal-blue: #1d4ed8; /* Jewel Sapphire Blue */
+    /* Premium Color Palette (White, Black, Gold) */
+    --color-primary: #cca936;    /* Metallic Brushed Gold */
+    --color-secondary: #d4af37;  /* Slightly Lighter Gold Accent */
+    --color-royal-blue: #cca936; /* Unified to Gold */
     --color-gold: #cca936;       /* Brushed Gold Accent */
-    --color-teal: #0d9488;       /* Deep Emerald / Teal Jewel Tone */
-    --color-red: #e11d48;        /* Ruby Red Alert */
+    --color-teal: #cca936;       /* Unified to Gold */
+    --color-red: #e11d48;        /* Ruby Red Alert remains for errors */
 
     --text-white: #ffffff;
-    --text-gray: #94a3b8;        /* Titanium Slate Gray */
-    --text-light-gray: #cbd5e1;  /* Platinum Off-White */
+    --text-gray: #a1a1a6;        /* Slate Gray */
+    --text-light-gray: #f5f5f7;  /* High-Contrast White */
 
     /* Typography */
     --font-sans: 'Inter', sans-serif;
@@ -28,37 +28,37 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
     /* Shadows & Glows */
-    --shadow-main: 0 16px 40px rgba(0, 0, 0, 0.6);
-    --glow-primary: 0 0 30px rgba(180, 83, 9, 0.2);
-    --glow-gold: 0 0 25px rgba(204, 169, 54, 0.15);
-    --glow-teal: 0 0 25px rgba(13, 148, 136, 0.15);
+    --shadow-main: 0 16px 40px rgba(0, 0, 0, 0.8);
+    --glow-primary: 0 0 30px rgba(204, 169, 54, 0.25);
+    --glow-gold: 0 0 25px rgba(204, 169, 54, 0.2);
+    --glow-teal: 0 0 25px rgba(204, 169, 54, 0.2);
 
     --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 [data-theme="light"] {
-    --bg-dark: #fcfbf9;          /* Earthy Alabaster White */
-    --bg-darker: #f5f4f0;        /* Warm Sandstone Gray */
-    --card-bg: rgba(255, 255, 255, 0.85); /* Polished White Ceramic glass */
-    --card-border: rgba(0, 0, 0, 0.06);
-    --card-hover-border: #78350f; /* Crafted Walnut Wood on hover */
+    --bg-dark: #ffffff;          /* Pure White */
+    --bg-darker: #fafafa;        /* Warm Silk White */
+    --card-bg: rgba(255, 255, 255, 0.85); /* Polished White Glass */
+    --card-border: rgba(0, 0, 0, 0.08);
+    --card-hover-border: #cca936; /* Gold Accent on hover */
 
     /* Light Theme Palette (Opposite Contrast) */
-    --color-primary: #78350f;    /* Deep Mahogany/Walnut */
-    --color-secondary: #b45309;  /* Warm Copper Terracotta */
-    --color-royal-blue: #1e40af; /* Jewel Sapphire Blue (Deep) */
-    --color-gold: #b45309;       /* Matte Copper/Amber Accent */
-    --color-teal: #0f766e;       /* Deep Forest Emerald */
+    --color-primary: #cca936;    /* Gold */
+    --color-secondary: #d4af37;  /* Gold */
+    --color-royal-blue: #cca936; /* Unified to Gold */
+    --color-gold: #cca936;       /* Gold */
+    --color-teal: #cca936;       /* Unified to Gold */
     --color-red: #be123c;        /* Rich Ruby Red */
 
-    --text-white: #111827;       /* Rich Obsidian Charcoal Text */
-    --text-gray: #4b5563;        /* Dark Titanium Gray */
-    --text-light-gray: #1f2937;  /* High-Contrast Body Charcoal */
+    --text-white: #000000;       /* Rich Charcoal/Black Text */
+    --text-gray: #555555;        /* Slate Gray */
+    --text-light-gray: #111111;  /* High-Contrast Charcoal */
 
     --shadow-main: 0 16px 40px rgba(0, 0, 0, 0.05);
-    --glow-primary: 0 0 30px rgba(120, 53, 15, 0.08);
-    --glow-gold: 0 0 25px rgba(180, 83, 9, 0.08);
-    --glow-teal: 0 0 25px rgba(15, 118, 110, 0.08);
+    --glow-primary: 0 0 30px rgba(204, 169, 54, 0.1);
+    --glow-gold: 0 0 25px rgba(204, 169, 54, 0.1);
+    --glow-teal: 0 0 25px rgba(204, 169, 54, 0.1);
 }
 
 /* GENERAL STYLES & RESET */
@@ -310,6 +310,14 @@ a {
     box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
 }
 
+.logo-img {
+    width: 38px;
+    height: 38px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(204, 169, 54, 0.2);
+}
+
 .nav-links {
     display: flex;
     align-items: center;
@@ -476,16 +484,20 @@ section {
 }
 
 .hero-container {
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: 40px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto;
+    gap: 24px;
 }
 
 .hero-content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
 }
 
 .badge {
@@ -549,6 +561,7 @@ section {
 .hero-ctas {
     display: flex;
     gap: 16px;
+    justify-content: center;
 }
 
 .hero-visual {
@@ -2507,5 +2520,114 @@ section {
 
     .form-row-2 {
         grid-template-columns: 1fr;
+    }
+}
+
+/* VERTICAL LEFT SIDEBAR NAVBAR FOR DESKTOP */
+@media (min-width: 769px) {
+    body {
+        padding-left: 260px;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 260px;
+        height: 100vh;
+        z-index: 100;
+        padding: 40px 0;
+        background: rgba(4, 6, 12, 0.9);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-right: 1px solid var(--card-border);
+        border-bottom: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    [data-theme="light"] .navbar {
+        background: rgba(251, 250, 247, 0.9);
+    }
+
+    .navbar.scrolled {
+        padding: 40px 0;
+        background: rgba(4, 6, 12, 0.9);
+        border-bottom: none;
+        border-right: 1px solid var(--card-border);
+    }
+
+    [data-theme="light"] .navbar.scrolled {
+        background: rgba(251, 250, 247, 0.9);
+    }
+
+    .nav-container {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 50px;
+        padding: 0 28px;
+    }
+
+    .nav-logo {
+        margin-bottom: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .nav-link {
+        font-size: 15px;
+        padding: 8px 0;
+        width: 100%;
+        display: block;
+    }
+
+    /* Transition hover bar on the left instead of bottom */
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: -28px;
+        top: 0;
+        width: 3px;
+        height: 0;
+        background: linear-gradient(180deg, var(--color-primary), var(--color-secondary));
+        transition: var(--transition-smooth);
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+        width: 3px;
+        height: 100%;
+    }
+
+    .nav-actions {
+        margin-top: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .theme-toggle-btn {
+        margin-bottom: 10px;
+    }
+
+    .nav-cta {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .mobile-toggle {
+        display: none !important;
     }
 }

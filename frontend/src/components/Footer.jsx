@@ -20,10 +20,8 @@ export default function Footer() {
       <div className="container footer-grid">
         <div className="footer-brand">
           <a href="#" className="nav-logo">
-            <div className="logo-icon">
-              <i className="fa-solid fa-scale-balanced"></i>
-            </div>
-            <span>Nyaya<span class="gold-text">AI</span></span>
+            <img src="assets/logo.png" alt="Nyaya AI Logo" className="logo-img" />
+            <span>Nyaya<span className="gold-text">AI</span></span>
           </a>
           <p className="footer-desc">Legal Technology built to simplify compliance, audit agreements, and research case laws dynamically with advanced intelligence.</p>
         </div>
