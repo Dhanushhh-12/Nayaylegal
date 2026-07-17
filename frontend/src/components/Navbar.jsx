@@ -66,17 +66,8 @@ export default function Navbar() {
           <div className="logo-icon">
             <i className="fa-solid fa-scale-balanced"></i>
           </div>
-          <span>Nyaya<span class="gold-text">AI</span></span>
+          <span>Nyaya<span className="gold-text">AI</span></span>
         </a>
-        
-        <button 
-          className="mobile-toggle" 
-          aria-label="Toggle Navigation" 
-          id="mobile-toggle"
-          onClick={() => setIsMobileOpen(!isMobileOpen)}
-        >
-          <i className={isMobileOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars-staggered"}></i>
-        </button>
         
         <nav className={`nav-links ${isMobileOpen ? 'open' : ''}`} id="nav-links">
           {navLinks.map((link) => (
@@ -89,6 +80,17 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
+        </nav>
+
+        <div className="nav-actions">
+          <a 
+            href="#features" 
+            className="cta-btn nav-cta"
+            onClick={() => handleLinkClick('features')}
+          >
+            Try AI Assistant
+          </a>
+
           <button 
             className="theme-toggle-btn"
             onClick={toggleTheme}
@@ -97,14 +99,16 @@ export default function Navbar() {
           >
             <i className={theme === 'dark' ? "fa-solid fa-sun" : "fa-solid fa-moon"}></i>
           </button>
-          <a 
-            href="#features" 
-            className="cta-btn nav-cta"
-            onClick={() => handleLinkClick('features')}
+
+          <button 
+            className="mobile-toggle" 
+            aria-label="Toggle Navigation" 
+            id="mobile-toggle"
+            onClick={() => setIsMobileOpen(!isMobileOpen)}
           >
-            Try AI Assistant
-          </a>
-        </nav>
+            <i className={isMobileOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars-staggered"}></i>
+          </button>
+        </div>
       </div>
     </header>
   );

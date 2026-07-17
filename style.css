@@ -4,29 +4,23 @@
 
 /* DESIGN SYSTEM VARIABLES */
 :root {
-    --bg-dark: #070a13;
-    --bg-darker: #04060c;
-    --card-bg: rgba(13, 20, 38, 0.45);
-    --card-border: rgba(255, 255, 255, 0.08);
-    --card-hover-border: rgba(99, 102, 241, 0.35);
+    --bg-dark: #0a0b0d;          /* Matte Graphite Carbon */
+    --bg-darker: #050506;        /* Deep Obsidian Carbon */
+    --card-bg: rgba(18, 20, 24, 0.7); /* Smoked titanium gray glass */
+    --card-border: rgba(255, 255, 255, 0.05);
+    --card-hover-border: #d4af37; /* Metallic Brushed Gold */
 
-    /* Royal Color Palette */
-    --color-primary: #6366f1;
-    /* Indigo */
-    --color-secondary: #8b5cf6;
-    /* Purple */
-    --color-royal-blue: #2563eb;
-    /* Royal Blue */
-    --color-gold: #cca936;
-    /* Gold Accent */
-    --color-teal: #14b8a6;
-    /* Neon Accent */
-    --color-red: #ef4444;
-    /* High Risk Highlight */
+    /* Premium Color Palette (Jewel Tones, Wood Browns, Metallic Accents) */
+    --color-primary: #b45309;    /* Crafted Walnut Copper */
+    --color-secondary: #78350f;  /* Deep Mahogany Wood Brown */
+    --color-royal-blue: #1d4ed8; /* Jewel Sapphire Blue */
+    --color-gold: #cca936;       /* Brushed Gold Accent */
+    --color-teal: #0d9488;       /* Deep Emerald / Teal Jewel Tone */
+    --color-red: #e11d48;        /* Ruby Red Alert */
 
     --text-white: #ffffff;
-    --text-gray: #9ca3af;
-    --text-light-gray: #d1d5db;
+    --text-gray: #94a3b8;        /* Titanium Slate Gray */
+    --text-light-gray: #cbd5e1;  /* Platinum Off-White */
 
     /* Typography */
     --font-sans: 'Inter', sans-serif;
@@ -34,12 +28,37 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
     /* Shadows & Glows */
-    --shadow-main: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    --glow-primary: 0 0 25px rgba(99, 102, 241, 0.3);
-    --glow-gold: 0 0 20px rgba(212, 175, 55, 0.2);
-    --glow-teal: 0 0 20px rgba(20, 184, 166, 0.2);
+    --shadow-main: 0 16px 40px rgba(0, 0, 0, 0.6);
+    --glow-primary: 0 0 30px rgba(180, 83, 9, 0.2);
+    --glow-gold: 0 0 25px rgba(204, 169, 54, 0.15);
+    --glow-teal: 0 0 25px rgba(13, 148, 136, 0.15);
 
     --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[data-theme="light"] {
+    --bg-dark: #fcfbf9;          /* Earthy Alabaster White */
+    --bg-darker: #f5f4f0;        /* Warm Sandstone Gray */
+    --card-bg: rgba(255, 255, 255, 0.85); /* Polished White Ceramic glass */
+    --card-border: rgba(0, 0, 0, 0.06);
+    --card-hover-border: #78350f; /* Crafted Walnut Wood on hover */
+
+    /* Light Theme Palette (Opposite Contrast) */
+    --color-primary: #78350f;    /* Deep Mahogany/Walnut */
+    --color-secondary: #b45309;  /* Warm Copper Terracotta */
+    --color-royal-blue: #1e40af; /* Jewel Sapphire Blue (Deep) */
+    --color-gold: #b45309;       /* Matte Copper/Amber Accent */
+    --color-teal: #0f766e;       /* Deep Forest Emerald */
+    --color-red: #be123c;        /* Rich Ruby Red */
+
+    --text-white: #111827;       /* Rich Obsidian Charcoal Text */
+    --text-gray: #4b5563;        /* Dark Titanium Gray */
+    --text-light-gray: #1f2937;  /* High-Contrast Body Charcoal */
+
+    --shadow-main: 0 16px 40px rgba(0, 0, 0, 0.05);
+    --glow-primary: 0 0 30px rgba(120, 53, 15, 0.08);
+    --glow-gold: 0 0 25px rgba(180, 83, 9, 0.08);
+    --glow-teal: 0 0 25px rgba(15, 118, 110, 0.08);
 }
 
 /* GENERAL STYLES & RESET */
@@ -150,21 +169,22 @@ a {
 
 .glass-card {
     background: var(--card-bg);
-    backdrop-filter: blur(12px) saturate(180%);
-    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     border: 1px solid var(--card-border);
-    border-radius: 20px;
+    border-radius: 16px;
     box-shadow: var(--shadow-main);
     transition: var(--transition-smooth);
 }
 
 .glass-card:hover {
     border-color: var(--card-hover-border);
-    box-shadow: 0 12px 40px 0 rgba(99, 102, 241, 0.15);
+    box-shadow: var(--shadow-main), var(--glow-primary);
+    transform: translateY(-4px);
 }
 
 .gradient-text {
-    background: linear-gradient(135deg, #a5b4fc 0%, #818cf8 25%, #c084fc 70%, #fbbf24 100%);
+    background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-primary) 50%, var(--color-royal-blue) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

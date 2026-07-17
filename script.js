@@ -4,6 +4,37 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+    // Theme Toggle Logic
+    const themeToggleBtn = document.getElementById('theme-toggle-btn');
+    let theme = localStorage.getItem('theme') || 'dark';
+    
+    const applyTheme = (t) => {
+        document.documentElement.setAttribute('data-theme', t);
+        localStorage.setItem('theme', t);
+        if (themeToggleBtn) {
+            const icon = themeToggleBtn.querySelector('i');
+            if (icon) {
+                if (t === 'dark') {
+                    icon.className = 'fa-solid fa-sun';
+                    themeToggleBtn.title = "Switch to Light Mode";
+                } else {
+                    icon.className = 'fa-solid fa-moon';
+                    themeToggleBtn.title = "Switch to Dark Mode";
+                }
+            }
+        }
+    };
+    
+    // Apply initial theme
+    applyTheme(theme);
+    
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', () => {
+            theme = theme === 'dark' ? 'light' : 'dark';
+            applyTheme(theme);
+        });
+    }
+
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
